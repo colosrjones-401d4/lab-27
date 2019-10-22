@@ -1,4 +1,5 @@
 import React from 'react';
+import '../counter/counter.scss';
 
 class Counter extends React.Component {
   constructor(props) {
@@ -30,12 +31,12 @@ class Counter extends React.Component {
     let classes = ['count', this.state.polarity].join(' ');
     return (
       <section className="counter">
-        <a href="#" className="down clicker" onClick={this.handleDown}>
-          -
+        <a href="button" className="down clicker" onClick={this.handleDown}>
+          - negative
         </a>
         <span className={classes}>{this.state.count}</span>
-        <a href="#" className="up clicker" onClick={this.handleUp}>
-          +
+        <a href="button" className="up clicker" onClick={this.handleUp}>
+          + positive
         </a>
       </section>
     );
