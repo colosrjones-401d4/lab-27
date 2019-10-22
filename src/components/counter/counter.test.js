@@ -1,6 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import Counter from './counter';
+import app from '../../app'
 
 describe('<Counter/> (Enzyme Test)', () => {
   it('is alive at application start', () => {
