@@ -29,7 +29,6 @@
   "bugs": {
     "url": "https://github.com/colosrjones-401d4/lab-27/issues"
   },
-  "homepage": "https://github.com/colosrjones-401d4/lab-27#readme",
   "browserslist": {
     "production": [
       ">0.2%",
