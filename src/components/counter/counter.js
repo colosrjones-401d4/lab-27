@@ -1,3 +1,5 @@
+// eslint-disable-next-line 
+
 import React from 'react';
 import '../counter/counter.scss';
 
@@ -31,13 +33,13 @@ class Counter extends React.Component {
     let classes = ['count', this.state.polarity].join(' ');
     return (
       <section className="counter">
-        <a href="button" className="down clicker" onClick={this.handleDown}>
+        <button className="down clicker" onClick={this.handleDown}>
           - negative
-        </a>
+        </button>
         <span className={classes}>{this.state.count}</span>
-        <a href="button" className="up clicker" onClick={this.handleUp}>
+        <button className="up clicker" onClick={this.handleUp}>
           + positive
-        </a>
+        </button>
       </section>
     );
   }
