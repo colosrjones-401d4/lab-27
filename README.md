@@ -1,6 +1,4 @@
 # lab-27
-lab-27 React Testing &amp; Deployment
-
 
 # React Testing and Deployment
 
@@ -10,24 +8,6 @@ lab-27 React Testing &amp; Deployment
 * Write and Execute Enzyme (live) tests for a React Application
 * Deploy a React applicaation to AWS S3 manually
 * Deploy a React application to cloudfront directly from github
-
-## Outline
-* :05 **Housekeeping/Recap**
-* :30 **Whiteboard/DSA Review**
-* :15 **Lightning Talk**
-* Break
-* :30 **CS/UI Concepts** -
-* :20 **Code Review**
-* Break
-* :60 **Main Topic**
-
-## UI Concept:
-* SASS
-  * @import
-  * Mixins
-    * @include
-
-## Main Topics:
 
 ### AWS Deployments
 * Buckets
