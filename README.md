@@ -6,7 +6,7 @@
 
 ## [![Netlify Status](https://api.netlify.com/api/v1/badges/ee8d5428-3894-400e-8448-1417f8a7e87d/deploy-status)](https://app.netlify.com/sites/optimistic-dubinsky-df1c0d/deploys)
 
-## Travis (https://travis-ci.org/colosrjones-401d4/lab-27.svg?branch=master)
+## [![Build Status](https://travis-ci.org/colosrjones-401d4/lab-27.svg?branch=master)](https://travis-ci.org/colosrjones-401d4/lab-27)
 
 
 ## Learning Objectives
