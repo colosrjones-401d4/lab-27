@@ -5,6 +5,7 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "aws-tools": "^1.0.0",
     "enzyme": "latest",
     "enzyme-adapter-react-16": "^1.7.0",
     "node-sass": "^4.12.0",
