@@ -2,6 +2,13 @@
 
 # React Testing and Deployment
 
+## AWS Deploy(http://lab27aws.s3-website.us-east-2.amazonaws.com)
+
+## [![Netlify Status](https://api.netlify.com/api/v1/badges/ee8d5428-3894-400e-8448-1417f8a7e87d/deploy-status)](https://app.netlify.com/sites/optimistic-dubinsky-df1c0d/deploys)
+
+## Travis (https://travis-ci.org/colosrjones-401d4/lab-27.svg?branch=master)
+
+
 ## Learning Objectives
 
 * Write and Execute Snapshot tests for a React Application
