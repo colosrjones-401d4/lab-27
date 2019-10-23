@@ -32,6 +32,3 @@
 
 Using a combination of approaches, you can easily "use" your application and ensure that things are changing both visually and physically (elements and state) as you expect.
 
-lab27aws.s3-website.us-east-2.amazonaws.com
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ee8d5428-3894-400e-8448-1417f8a7e87d/deploy-status)](https://app.netlify.com/sites/optimistic-dubinsky-df1c0d/deploys)
