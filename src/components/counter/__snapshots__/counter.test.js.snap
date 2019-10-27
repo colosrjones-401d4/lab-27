@@ -25,3 +25,27 @@ exports[`<Counter/> Core Component (Snapshot Test) renders right 1`] = `
   </a>
 </section>
 `;
+
+exports[`Counter SNAPSHOT TEST 1`] = `
+<section
+  className="counter"
+>
+  <button
+    className="down clicker"
+    onClick={[Function]}
+  >
+    - negative
+  </button>
+  <span
+    className="count "
+  >
+    0
+  </span>
+  <button
+    className="up clicker"
+    onClick={[Function]}
+  >
+    + positive
+  </button>
+</section>
+`;
