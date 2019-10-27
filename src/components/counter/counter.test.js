@@ -1,56 +1,39 @@
+'use strict';
+
 import React from 'react';
-import renderer from 'react-test-renderer';
 import Counter from './counter';
-import app from '../../app'
+import renderer from 'react-test-renderer';
+import { mount, shallow, render } from 'enzyme';
 
-describe('<Counter/> (Enzyme Test)', () => {
-  it('is alive at application start', () => {
-    let app = mount(<Counter />);
-    expect(app.find('.count').text()).toBe('0');
+describe('Counter', () => {
+  it('should mount and exist', () => {
+    const counter = mount(<Counter />);
+    expect(counter.find('.up')).toBeDefined();
   });
 
-  it('can count up', () => {
-    let app = mount(<Counter />);
-    app.find('.up').simulate('click');
-    expect(app.state('count')).toEqual(1);
-    app.find('.up').simulate('click');
-    expect(app.state('count')).toEqual(2);
+  it('should update the state', () => {
+    const counter = mount(<Counter />);
+    let button = counter.find('.up');
+    let initCount = counter.state('count');
+    button.simulate('click');
+    let newCount = counter.state('count');
+    expect(newCount).not.toBe(initCount);
   });
 
-  it('can count down', () => {
-    let app = mount(<Counter />);
-    app.find('.down').simulate('click');
-    expect(app.state('count')).toEqual(-1);
-    app.find('.down').simulate('click');
-    expect(app.state('count')).toEqual(-2);
+  it('should update the DOM', () => {
+    const counter = mount(<Counter />);
+    let button = counter.find('.up');
+    button.simulate('click');
+    let count = counter.find('.count');
+    expect(count.text()).toBe('1');
+    button = counter.find('.down');
+    button.simulate('click');
+    expect(count.text()).toBe('0');
   });
 
-  it('visually displays proper polarity and value on the count element', () => {
-    let app = mount(<Counter />);
-    expect(app.find('.count.negative').exists()).toBeFalsy();
-    expect(app.find('.count.positive').exists()).toBeFalsy();
-    // Go to 1
-    app.find('.up').simulate('click');
-    expect(app.find('.count.positive').exists()).toBeTruthy();
-    expect(app.find('.count').text()).toBe('1');
-
-    // Down to zero
-    app.find('.down').simulate('click');
-    expect(app.find('.count').text()).toBe('0');
-    expect(app.find('.count.negative').exists()).toBeFalsy();
-    expect(app.find('.count.positive').exists()).toBeFalsy();
-
-    // Down to -1
-    app.find('.down').simulate('click');
-    expect(app.find('.count.negative').exists()).toBeTruthy();
-    expect(app.find('.count').text()).toBe('-1');
-  });
-});
-
-describe('<Counter/> Core Component (Snapshot Test)', () => {
-  it('renders right', () => {
-    const component = renderer.create(<Counter />);
-    let tree = component.toJSON();
+  it('SNAPSHOT TEST', () => {
+    const counter = renderer.create(<Counter />);
+    const tree = counter.toJSON();
     expect(tree).toMatchSnapshot();
   });
 });
